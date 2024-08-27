@@ -10,6 +10,8 @@ WITH source AS (
     )
 
     SELECT
+        orders_id,
+        date_date,
         product_id,
         revenue,
         CAST(purchase_price AS NUMERIC) AS purchase_price,
