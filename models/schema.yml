@@ -35,5 +35,43 @@ sources:
               column_name: "products_id"
           - not_null:
               column_name: "products_id"
+
+      - name: adwords
+        identifier: raw_gz_adwords
+        description: campaigns, ads cost, numbers of click and impressions of adwords
+        tests:
+          - unique:
+              column_name: "(date_date || '_' || camPGN_name)"
+          - not_null:
+              column_name: "(date_date || '_' || camPGN_name)"
+              
+
+      - name: bing
+        identifier: raw_gz_bing
+        description: campaigns, ads cost, numbers of click and impressions of bing
+        tests:
+          - unique:
+              column_name: "(date_date || '_' || camPGN_name)"
+          - not_null:
+              column_name: "(date_date || '_' || camPGN_name)"
+
+      - name: criteo
+        identifier: raw_gz_criteo
+        description: campaigns, ads cost, numbers of click and impressions of criteo
+        tests:
+          - unique:
+              column_name: "(date_date || '_' || camPGN_name)"
+          - not_null:
+              column_name: "(date_date || '_' || camPGN_name)"
+
+      - name: facebook
+        identifier: raw_gz_facebook
+        description: campaigns, ads cost, numbers of click and impressions of facebook
+        tests:
+          - unique:
+              column_name: "(date_date || '_' || camPGN_name)"
+          - not_null:
+              column_name: "(date_date || '_' || camPGN_name)"
+
           
       
